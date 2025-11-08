@@ -68,8 +68,13 @@ gh api \
 docker system prune -fa
 
 #
-#
+# Run the container
 #
 docker run -p 8080:8080 --rm --name learn-backend ghcr.io/don9x/learn-backend:latest
 
+#
+# Test with Curl
+#
+curl localhost:8080
+curl localhost:8080/ping
 ```
